@@ -1,0 +1,26 @@
+article, h1{
+    background-color: cadetblue;
+}
+section article{
+    border:4px solid salmon;
+}
+
+ul > li {
+    background-color: slateblue;
+}
+
+.titulo{
+    color: red;
+}
+
+.noticia{
+    background-color: yellow;
+}
+
+.adicional{
+    font-family: Impact;
+}
+
+#importante{
+    background-color: yellowgreen;
+}

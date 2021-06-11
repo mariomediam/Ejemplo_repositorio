@@ -1,0 +1,24 @@
+.transicion {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  transition: all 2s ease;
+}
+
+.transicion:hover {
+  background-color: brown;
+}
+
+.transFoto{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}

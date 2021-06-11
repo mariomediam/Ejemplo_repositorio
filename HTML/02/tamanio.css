@@ -1,0 +1,19 @@
+*{
+    border: 1px solid red;
+}
+
+.articulo1{
+    width: 300px;
+    height: 300px;
+}
+
+.articulo2{
+    width: 50%;
+}
+
+.big{
+    border: 2px solid blue;
+    background-color: skyblue;
+    width: 500px;
+    height: 500px;
+}
