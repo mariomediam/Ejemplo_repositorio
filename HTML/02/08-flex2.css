@@ -1,0 +1,29 @@
+.contenedor-fila{
+    display:flex;
+    flex-direction: row;
+
+}
+
+.contenido-fila{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+
+}
+
+.contenedor-columna{
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+.contenido-columna{
+    border-radius: 50%;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+
+}
