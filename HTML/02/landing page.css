@@ -31,11 +31,11 @@
 }
 
 .texto1-banner {
-  font-size: 50px;
+  font-size: 75px;
 }
 .texto2-banner {
   text-align: left;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .contenedor-medio {
@@ -48,7 +48,7 @@
 .contenido {
   max-width: 350px;
   /* max-height: 300px; */
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
   margin: 50px;
   padding: 5px;
   justify-content: center;
@@ -184,3 +184,64 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+.contenedor-footer {
+    display: flex;
+    flex-direction: row;
+    /* margin: auto; */
+    justify-content: center;
+    flex-grow: 1;
+    background-color: #1D262D;
+  }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    /* padding: 10px; */
+    margin: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+    border: 1px solid teal;   
+    
+}
+
+.contenido-footer {
+    max-width: 350px;
+    /* max-height: 300px; */
+    /* border: 1px solid teal; */
+    /* margin: 25px;
+    padding: 5px; */
+    padding: 25px;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: left;
+    flex-grow: 1;
+  
+  }
+
+  .titulo-footer{
+      padding: 10px;
+      color: white;
+      font-size: 18px;
+  }
+
+  .link-footer{
+      text-decoration: none;
+      color: #aac9fa;
+      font-size: 14px;
+  }
+
+  .contenido-footer > ul > li{
+      list-style:none;
+  }
+
+  .contenedor-red-social {
+    display: flex;
+    flex-direction: row;
+    /* margin: auto; */
+    justify-content: left;
+    flex-grow: 1;    
+  }
+
+  .imagen-red-social{
+      margin: 10px 5px 0px 5px;
+  }
