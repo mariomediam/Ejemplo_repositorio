@@ -1,0 +1,30 @@
+h1{
+    background-color: green;
+    color: white;
+}
+
+article{
+    border: 1px solid teal;
+    margin: 10px;
+}
+
+main{
+    display: flex;
+}
+@media screen and (max-width: 768px){
+ h1{
+     background-color: hotpink;
+     color: salmon;
+ }
+
+ main{
+     display: flex;
+     flex-direction: column;
+ }
+}
+
+@media screen and (max-width: 420px){
+    h1{
+        background-color: yellow;
+    }
+   }
