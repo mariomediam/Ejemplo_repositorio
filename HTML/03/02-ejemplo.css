@@ -1,57 +1,251 @@
-* {
-  margin: 0px;
-  padding: 0px;
+*{
+  margin:0;
+  padding:0;
   box-sizing: border-box;
-  /* border: 1px solid grey; */
+  /* border:1px solid gray; */
 }
 
-nav {
-  font-family: "Lato", sans-serif;
-  display: flex;
+/* variables */
+:root{
+  --color-primario:#FB8F1D;
+  --color-secundario: #1ABE84;
+  --color-dark-bold: #7D7987;
+  
+}
+
+nav{
+  font-family: 'Lato', sans-serif;
+  display:flex;
   justify-content: space-between;
- 
+  margin-top:20px;
 }
 
-:root {
-  --color-primario: orange;
-}
-
-nav img {
+/* todos los img dentro de nav */
+nav img{
   max-width: 40px;
 }
 
-button{
-    outline: none;
+.container{
+  max-width:900px;
+  margin:0 auto;
+  justify-content: center;
 }
 
-.btn-register {
-  background-color: var(--color-primario);
-  padding: 8px;
-  color: white;
-  border-radius: 5px;
-  border: 2px solid var(--color-primario);
-}
-
-.btn-login {
-    background-color: white;
-    padding: 8px;
-    color:var(--color-primario);
-    border-radius: 5px;
-    border: 2px solid var(--color-primario);
-  }
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-nav ul {
-  display: flex;
+nav ul{
+  display:flex;
   align-items: center;
 }
 
 nav li{
-    list-style: none;
-    margin: 0 5px;
-    cursor: pointer;
+  list-style: none;
+  /* margin:arribaabajo costados */
+  margin:0 20px;
+  cursor:pointer;
+}
+/* del nav el elemento de tipo li numero 4 */
+nav li:nth-of-type(4){
+  margin-right: 5px;
+}
+
+nav li:nth-of-type(5){
+  margin-left: 5px;
+}
+
+button{
+  outline:none;
+}
+
+.btn-register{
+  background-color: var(--color-primario);
+  color:white;
+  padding: 8px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius:5px;
+  border:1px solid var(--color-primario);
+}
+
+.btn-login{
+  background-color: white;
+  color:var(--color-primario);
+  padding: 8px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius:5px;
+  border:1px solid var(--color-primario);
+}
+
+#check{
+  /* esconder check */
+  position: absolute;
+  visibility: hidden;
+  z-index: -99;
+}
+
+.menu{
+  transition: 0.5s;
+}
+
+.show-menu-btn, .hide-menu-btn{
+  cursor:pointer;
+  font-size: 30px;
+  display: none;
+}
+
+header{
+  display: flex;
+}
+
+.header-content{
+  width: 45%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+h1{
+  font-size: 64px;
+}
+
+h2{
+  font-size: 36px;
+}
+
+label{
+  font-family: 'Lato', sans-serif;
+}
+
+.header-content input{
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#btn-search{
+  background-color: var(--color-primario);
+  padding: 12px;
+  color: white;
+  width: 40%;
+  min-width: 150px;
+  border-radius: 10px;
+  font-family: 'Lato', sans-serif;
+  border:2px solid var(--color-primario);
+}
+
+.header-img{
+  width: 55%;
+  padding: 30px;
+}
+
+.header-img img{
+  max-width: 100%;
+}
+
+.li-disabled{
+  color: #B8BECD !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-conteiner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.section-conteiner div{
+  padding: 30px;
+}
+
+.section-p{
+  font-size: 17px;
+  color: var(--color-dark-bold);
+  font-family: 'Lato', sans-serif;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+
+.section-title-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-link{
+  color: var(--color-primario);
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.img-card{
+  width: 261px;
+  height: 337px;
+}
+
+.section-cards{
+  display: flex;
+}
+
+.card{
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.place{
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  border-top-right-radius: 8px;
+  padding: 10px;
+
+}
+@media screen and (max-width:768px) {
+  .menu{
+    position: fixed;
+    background-color: var(--color-secundario);
+    width: 100%;
+    height: 100vh;
+    top:0;
+    right: -100%;
+    text-align: center;
+    padding: 100px 0;
+    z-index: 20;
+    flex-direction: column;
+  }
+
+  .menu li{
+    padding: 20px;
+    font-size: 26px;
+  }
+
+  .btn-login, .btn-register{
+    font-size: 26px;
+  }
+  
+  .hide-menu-btn{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  
+  .show-menu-btn, .hide-menu-btn{
+    display:block;
+    padding-right: 10px ;
+  }
+
+  #check:checked ~ .menu{
+    right: 0;
+  }
+
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content{
+    min-height: 300px;
+  }
 }
