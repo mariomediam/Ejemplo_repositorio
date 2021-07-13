@@ -1,0 +1,10 @@
+.resaltado{
+    background-color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    color: red
+}
+
+.redondeado{
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px black;
+}

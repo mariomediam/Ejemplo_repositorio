@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+      <div class="raiz">
+          <nav>
+              <h1>Restaurant El Norteño</h1>
+          </nav>
+          <div class="principal">
+              <nav class="menu">
+                  <ul>
+                      <li>Postres</li>
+                      <li>Bebidas</li>
+                  </ul>
+              </nav>
+              <main id="contenido">
+                  <!-- Aqui irán nuestros productos cards
+                  <div class="tarjeta">
+                      <div class="imagen">
+                          <img src="https://picsum.photos/200">
+                      </div>
+                      <div class="texto">
+                          <h4>Ceviche</h4>
+                          <p>Lorem ipsum dolor sit amet consectetur.</p>
+                          <div class="precio">
+                              <span>S/ 30.00</span>
+                              <button class="btn-agregar">
+                                  Agregar
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  -->
+              </main>
+          </div>
+      </div>
+
+      <div class="carrito">
+          <p id="fecha"></p>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Item</th>
+                      <th>Cantidad</th>
+                      <th>P.Unit</th>
+                      <th>SubTotal</th>                      
+                      <th>Quitar</th>
+                  </tr>
+              </thead>
+              <tbody id="tbody-carrito">
+
+              </tbody>
+          </table>
+          <div class="resumen">
+              <table>
+                <tbody id="tbody-resumen">
+
+                </tbody>
+
+              </table>
+              <button id="btn-pagar">
+                  PAGAR ORDEN
+              </button>
+          </div>
+
+      </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
